@@ -1,0 +1,89 @@
+Wah bhai, yeh question toh full clarity lane wala hai — let's break it down full Hinglish student-teacher style:
+
+
+---
+
+Student:
+Sir, yeh "root directory" kya hota hai? Kya yeh Windows ke "My Computer" jaisa hai?
+
+
+---
+
+Teacher:
+Bahut hi badiya sawaal!
+Short answer: Sort of yes... but with a deeper meaning.
+
+
+---
+
+1. Windows vs Linux/Unix ka sochne ka tareeka
+
+Windows:
+
+Tum “My Computer” ya “This PC” open karte ho
+
+Wahan dikhta hai:
+
+C:\
+
+D:\
+
+E:\
+
+etc.
+
+
+
+Ye drives based system hai.
+
+Linux/Unix:
+
+Yahan sirf ek hi hierarchy hoti hai
+
+Sab kuch ek tree jaisa hota hai jiska base hota hai: / (root directory)
+
+
+
+---
+
+2. Root directory (/) ka matlab kya hai?
+
+Root directory is:
+
+> Sab kuch yahin se shuru hota hai.
+
+
+
+Yeh Linux ka top-level folder hai — system ki sabhi files aur folders isi ke under hote hain.
+
+Jaise:
+
+/
+├── bin/       (System commands like ls, cp, mv)
+├── etc/       (Configurations)
+├── home/      (Users ka data — jaise /home/barun)
+├── root/      (Root user ka home)
+├── var/       (Logs, spool, etc.)
+├── usr/       (Installed programs)
+
+
+---
+
+3. Sochne ka tareeka: Analogy time!
+
+
+---
+
+Final punchline (yaad rakhne ke liye):
+
+> Windows mein drives alag-alag hote hain (C:\, D:\)
+Linux mein sab kuch ek hi root (/) se grow karta hai — jaise tree ka trunk!
+
+
+
+So, root directory is not "My Computer", but it's more like "C:" — the starting point of everything.
+
+Bhai chaahe toh main ek diagram type ascii tree bhi bana du file structure ka — bole toh?
+
+
+https://chatgpt.com/share/680b28b7-d2fc-8002-824b-7a5b87dc9515
