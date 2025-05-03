@@ -1,0 +1,88 @@
+Barun, ye ek **common confusion** hai — lekin tumhara sawal chhota sa typo hai:  
+Tum kehna chahte ho:  
+
+> 🔹 Difference between **single quotes `' '`** and **double quotes `" "`** in shell (bash)?
+
+---
+
+Chalo teacher-student style samajhte hain 👨‍🏫👦
+
+---
+
+### 🧑‍🏫 **Teacher:**  
+Barun beta, single aur double quotes dono ka kaam hai **special characters ko protect karna**, lekin unka **behaviour different** hota hai.
+
+---
+
+## 📦 Single Quotes `' '`
+
+> **Everything is taken *literally***  
+> Har character **as-is** treat hota hai — koi variable ya command expand nahi hoti
+
+### 🔍 Example:
+
+```bash
+echo '$HOME'
+```
+
+🧾 Output:
+```
+$HOME
+```
+
+✅ Variable print **nahi hua** — uska naam hi as it is print ho gaya  
+⛔️ No variable expansion
+
+---
+
+## ✨ Double Quotes `" "`
+
+> **Variables and command substitution allowed**  
+> Shell kuch cheezon ko **expand karta hai**
+
+### 🔍 Example:
+
+```bash
+echo "$HOME"
+```
+
+🧾 Output:
+```
+/home/barun
+```
+
+✅ Variable expand ho gaya  
+🟢 `$HOME` ki value aa gayi
+
+---
+
+## 📊 Comparison Table
+
+| Feature                    | `'Single Quotes'`           | `"Double Quotes"`            |
+|---------------------------|-----------------------------|------------------------------|
+| Variable Expansion        | ❌ No                       | ✅ Yes                        |
+| Command Substitution      | ❌ No                       | ✅ Yes (`$(...)`)            |
+| Literal Characters        | ✅ All preserved            | 🔶 Some preserved             |
+| Escape needed inside?     | ❌ Not usually              | ✅ Yes (for `$`, `"`, `\`)   |
+
+---
+
+## 💡 Easy Trick to Remember:
+
+> 🧠 **Single quote = Strong wall**  
+> ❌ Koi variable ya command andar ghus nahi sakti
+
+> 🧠 **Double quote = Flexible window**  
+> ✅ Variables aur commands andar dikhte hain
+
+---
+
+### 🎯 Quick Quiz for you:
+
+```bash
+name="Barun"
+echo 'Hello $name'
+echo "Hello $name"
+```
+
+👉 Batao kya output aayega dono commands ka?
